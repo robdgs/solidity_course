@@ -32,4 +32,18 @@ contract DataTypes
     //long answer: yes, but we need a deeper dive in solidity first (but we will see that structs are better for that)
     //--------------------------------------------------------------------
     //bytes32[] : we can tecnically do it but we will never really need it
+
+	//Define a struct with different types:
+	
+    struct Person 
+    {
+        string  name;
+        uint256 age;
+        bool    hasDriverLicense;
+    }
+
+    Person myPerson = Person("Roberta", 22, false);
+
+    //Person here is my data type, look at what is a struct if this is unclear
+    //myPerson is my variable name
 }
